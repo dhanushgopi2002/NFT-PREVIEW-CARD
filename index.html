@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Outfit', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0d192b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #14253d;
+            border-radius: 15px;
+            padding: 24px;
+            max-width: 350px;
+            width: 100%;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        .nft-image-container {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 24px;
+        }
+
+        .nft-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        .card-title {
+            color: #ffffff;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .card-title:hover {
+            color: #00fff7;
+        }
+
+        .card-description {
+            color: #8bacda;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 24px;
+            font-weight: 300;
+        }
+
+        .card-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 24px;
+            border-bottom: 1px solid #2f415b;
+            margin-bottom: 16px;
+        }
+
+        .price {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: #00fff7;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .eth-icon {
+            width: 11px;
+            height: 18px;
+        }
+
+        .time-left {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #8bacda;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        .clock-icon {
+            width: 17px;
+            height: 17px;
+        }
+
+        .creator {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .creator-avatar {
+            width: 33px;
+            height: 33px;
+            border-radius: 50%;
+            border: 1px solid #ffffff;
+        }
+
+        .creator-text {
+            color: #8bacda;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        .creator-name {
+            color: #ffffff;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .creator-name:hover {
+            color: #00fff7;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="nft-image-container">
+            <img src="image-equilibrium.jpg" alt="Equilibrium NFT" class="nft-image">
+        </div>
+
+        <h1 class="card-title">Equilibrium #3429</h1>
+
+        <p class="card-description">Our Equilibrium collection promotes balance and calm.</p>
+
+        <div class="card-info">
+            <div class="price">
+                <svg class="eth-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 18">
+                    <path fill="#00FFF7" d="M11 9.684L5.5 13 0 9.684 5.5 0z"/>
+                    <path fill="#00FFF7" fill-opacity=".6" d="M0 9.684L5.5 13V0z"/>
+                    <path fill="#00FFF7" d="M5.5 14.031l5.5-3.235L5.5 18z"/>
+                    <path fill="#00FFF7" fill-opacity=".6" d="M5.5 18l-5.5-7.204L5.5 14.03z"/>
+                </svg>
+                <span>0.041 ETH</span>
+            </div>
+
+            <div class="time-left">
+                <svg class="clock-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17">
+                    <path fill="#8BACD9" d="M8.5 0a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17zm0 1.5a7 7 0 1 1 0 14 7 7 0 0 1 0-14zm.75 2.25v4.44l3.03 1.8-.75 1.26-3.78-2.25V3.75z"/>
+                </svg>
+                <span>3 days left</span>
+            </div>
+        </div>
+
+        <div class="creator">
+            <img src="image-avatar.png" alt="Jules Wyvern" class="creator-avatar">
+            <p class="creator-text">Creation of <span class="creator-name">Jules Wyvern</span></p>
+        </div>
+    </div>
+</body>
+</html>
